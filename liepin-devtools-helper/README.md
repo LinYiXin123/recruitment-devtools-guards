@@ -2,11 +2,19 @@
 
 This package disables the client-side DevTools enforcement previously identified on `https://lpt.liepin.com/*` so the page does not intentionally replace itself with `about:blank` during authorized debugging.
 
-## Behavior without the helper
+## Behavior comparison
+
+### Without the helper
 
 ![Liepin page behavior after opening F12 DevTools without the helper](../docs/images/liepin-normal-f12-devtools.webp)
 
 The animation shows the Liepin page replacing itself with `about:blank` after F12 DevTools is opened without this helper enabled.
+
+### With the helper enabled
+
+![Liepin page continuing to work with F12 DevTools open after enabling the helper](../docs/images/liepin-extension-enabled-f12.webp)
+
+The animation shows the Liepin page continuing to render and navigate normally while F12 DevTools remains open, without triggering the confirmed anti-debugging redirect chain.
 
 ## Recommended: unpacked Chrome extension
 

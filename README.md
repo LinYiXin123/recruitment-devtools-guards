@@ -12,9 +12,17 @@
 
 ## BOSS 直聘 F12 页面表现
 
+### 未启用扩展
+
 ![未启用扩展时在 BOSS 直聘页面打开 F12 开发者工具的表现](./docs/images/boss-zhipin-normal-f12-devtools.webp)
 
 上图记录未启用本扩展时，在 BOSS 直聘网页打开 F12 开发者工具后的页面表现。
+
+### 启用扩展
+
+![启用扩展后在 BOSS 直聘页面正常打开 F12 开发者工具](./docs/images/boss-zhipin-extension-enabled-f12.webp)
+
+上图记录启用本扩展后，BOSS 直聘网页可在 F12 开发者工具保持打开时正常浏览，已确认的反调试页面破坏链不再触发。
 
 ## 猎聘 F12 页面表现
 

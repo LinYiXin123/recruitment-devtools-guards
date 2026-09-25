@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>招聘平台 DevTools 守卫</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <div class="brand-mark" aria-hidden="true">
+          <img src="icons/icon-48.png" alt="" />
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">DEVTOOLS GUARD</p>
+          <h1>招聘平台调试守卫</h1>
+          <p>BOSS 直聘与猎聘独立控制</p>
+        </div>
+        <div id="summary" class="summary" aria-live="polite">正在读取</div>
+      </header>
+
+      <section class="platform-list" aria-label="平台开关">
+        <article class="platform-card boss-card" data-platform="boss">
+          <img class="platform-logo" src="assets/boss.png" alt="BOSS 直聘图标" />
+          <div class="platform-copy">
+            <div class="title-row">
+              <h2>BOSS 直聘</h2>
+              <span class="status-dot" aria-hidden="true"></span>
+            </div>
+            <a
+              class="platform-link"
+              href="https://www.zhipin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="打开 BOSS 直聘"
+            >www.zhipin.com <span aria-hidden="true">↗</span></a>
+            <span class="platform-status" data-status="boss">正在同步…</span>
+          </div>
+          <label class="switch" aria-label="启用 BOSS 直聘防护">
+            <input id="boss-enabled" type="checkbox" disabled />
+            <span class="slider"></span>
+          </label>
+        </article>
+
+        <article class="platform-card liepin-card" data-platform="liepin">
+          <img class="platform-logo" src="assets/liepin.png" alt="猎聘图标" />
+          <div class="platform-copy">
+            <div class="title-row">
+              <h2>猎聘</h2>
+              <span class="status-dot" aria-hidden="true"></span>
+            </div>
+            <a
+              class="platform-link"
+              href="https://lpt.liepin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="打开猎聘"
+            >lpt.liepin.com <span aria-hidden="true">↗</span></a>
+            <span class="platform-status" data-status="liepin">正在同步…</span>
+          </div>
+          <label class="switch" aria-label="启用猎聘防护">
+            <input id="liepin-enabled" type="checkbox" disabled />
+            <span class="slider"></span>
+          </label>
+        </article>
+      </section>
+
+      <section class="context-card" aria-live="polite">
+        <span class="context-icon" aria-hidden="true">↻</span>
+        <div>
+          <strong id="context-title">页面状态</strong>
+          <p id="context-message">切换当前平台后会自动刷新页面。</p>
+        </div>
+      </section>
+
+      <footer>
+        <span><i></i> 本地运行</span>
+        <span>无远程代码</span>
+        <span>无数据采集</span>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

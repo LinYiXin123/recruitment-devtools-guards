@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Liepin DevTools Development Helper",
+  "description": "Disables the known client-side DevTools blank-page enforcement on lpt.liepin.com for authorized debugging.",
+  "version": "1.0.0",
+  "minimum_chrome_version": "111",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://lpt.liepin.com/*"
+      ],
+      "js": [
+        "inject.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    }
+  ]
+}

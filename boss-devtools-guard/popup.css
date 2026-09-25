@@ -1,0 +1,161 @@
+:root {
+  color-scheme: light;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Microsoft YaHei", sans-serif;
+  background: #f6f7f9;
+  color: #17202a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 330px;
+  margin: 0;
+  background: linear-gradient(145deg, #f7fbff 0%, #f4f5f7 70%);
+}
+
+.panel {
+  padding: 18px;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mark {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border-radius: 12px;
+  background: #10a37f;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  box-shadow: 0 8px 20px rgb(16 163 127 / 22%);
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.heading p {
+  margin-top: 3px;
+  color: #68717c;
+  font-size: 12px;
+}
+
+.status-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 18px;
+  padding: 14px;
+  border: 1px solid #e3e7eb;
+  border-radius: 14px;
+  background: rgb(255 255 255 / 86%);
+  box-shadow: 0 8px 28px rgb(31 41 55 / 7%);
+}
+
+.status-card strong,
+.status-card span {
+  display: block;
+}
+
+.status-card strong {
+  font-size: 14px;
+}
+
+#status-detail {
+  margin-top: 4px;
+  color: #68717c;
+  font-size: 12px;
+}
+
+.switch {
+  position: relative;
+  flex: 0 0 auto;
+  width: 46px;
+  height: 26px;
+}
+
+.switch input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+  border-radius: 999px;
+  background: #c9cfd5;
+  transition: 160ms ease;
+}
+
+.slider::before {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 18%);
+  content: "";
+  transition: 160ms ease;
+}
+
+input:checked + .slider {
+  background: #10a37f;
+}
+
+input:checked + .slider::before {
+  transform: translateX(20px);
+}
+
+input:disabled + .slider {
+  cursor: wait;
+  opacity: 0.58;
+}
+
+.scope-note {
+  margin-top: 12px;
+  color: #68717c;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.error {
+  margin-top: 10px;
+  border-radius: 8px;
+  background: #fff0f0;
+  color: #b42318;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 8px 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #e3e7eb;
+  color: #89919a;
+  font-size: 10px;
+}

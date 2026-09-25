@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "招聘平台 DevTools 守卫",
+  "description": "分别控制 BOSS 直聘与猎聘页面的 DevTools 兼容防护。仅在所选平台本地运行。",
+  "version": "1.0.1",
+  "minimum_chrome_version": "102",
+  "permissions": ["scripting", "storage", "activeTab"],
+  "host_permissions": [
+    "https://www.zhipin.com/*",
+    "https://lpt.liepin.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "招聘平台 DevTools 守卫",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

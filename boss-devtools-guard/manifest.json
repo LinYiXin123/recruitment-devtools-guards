@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "BOSS DevTools Guard",
+  "version": "1.1.0",
+  "description": "Prevents confirmed DevTools-detection reactions on BOSS SEO and SPA pages. No data collection and no remote code.",
+  "minimum_chrome_version": "102",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.zhipin.com/*"
+  ],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "action": {
+    "default_title": "BOSS DevTools Guard",
+    "default_popup": "popup.html"
+  }
+}

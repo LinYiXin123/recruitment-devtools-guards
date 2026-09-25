@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BOSS DevTools Guard</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <header class="heading">
+        <span class="mark" aria-hidden="true">DG</span>
+        <div>
+          <h1>DevTools Guard</h1>
+          <p>仅作用于 www.zhipin.com</p>
+        </div>
+      </header>
+
+      <section class="status-card" aria-live="polite">
+        <div>
+          <strong id="status-title">正在读取状态…</strong>
+          <span id="status-detail">请稍候</span>
+        </div>
+        <label class="switch" aria-label="启用 BOSS 反调试防护">
+          <input id="enabled" type="checkbox" disabled />
+          <span class="slider"></span>
+        </label>
+      </section>
+
+      <p id="scope-note" class="scope-note">
+        防护在页面脚本前运行；切换后会刷新当前 BOSS 标签页。
+      </p>
+      <p id="error" class="error" role="alert" hidden></p>
+      <footer>
+        <span>无远程代码 · 无数据收集</span>
+        <span id="version"></span>
+      </footer>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -10,7 +10,7 @@
 | --- | --- | --- | --- |
 | [`boss-devtools-guard/`](./boss-devtools-guard/) | 1.1.0 | `https://www.zhipin.com/*` | BOSS 直聘单平台版 |
 | [`liepin-devtools-helper/`](./liepin-devtools-helper/) | 1.0.0 | `https://lpt.liepin.com/*` | 猎聘单平台版 |
-| [`dual-platform-devtools-guard/`](./dual-platform-devtools-guard/) | 1.0.1 | 上述两个域名 | 双平台集成版，提供两个独立开关 |
+| [`dual-platform-devtools-guard/`](./dual-platform-devtools-guard/) | 1.1.0 | 上述两个域名 | 双平台集成版，提供两个独立开关与毛玻璃弹窗 |
 
 每个目录都是可独立加载的完整扩展，`manifest.json` 位于目录第一层。
 

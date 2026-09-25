@@ -11,6 +11,10 @@
 - 保留键盘焦点样式，并在系统启用“减少动态效果”时关闭漂移动画。
 - 本次仅调整本地 HTML/CSS 和版本号，平台守卫及注册逻辑未改动。
 
+## 界面预览
+
+![招聘平台 DevTools 守卫毛玻璃弹窗](../docs/images/dual-platform-glass-ui.png)
+
 ## 安装
 
 1. 打开 `chrome://extensions/`。

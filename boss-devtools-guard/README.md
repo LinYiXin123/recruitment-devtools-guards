@@ -4,6 +4,12 @@
 
 当前版本：`1.1.0`
 
+## 未启用扩展时的页面表现
+
+![未启用扩展时在 BOSS 直聘页面打开 F12 开发者工具的表现](../docs/images/boss-zhipin-normal-f12-devtools.webp)
+
+上图记录未启用本扩展时，在 BOSS 直聘网页打开 F12 开发者工具后的页面表现。
+
 ## 覆盖的页面链路
 
 - SEO 页面：阻止生产脚本通过 `parent.__xbcw` 取得隐藏 iframe 的干净执行环境。
